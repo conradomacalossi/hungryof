@@ -7,7 +7,21 @@
     height: 100%;
 }
 
+.img {
+    width: 50%;
+}
 
- .img {
-     width: 50%;
- }
+.button {
+  color: #50423f;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  border: solid #50423f 2px;
+  text-decoration: none;
+}
+
+.button:hover {
+  color: #a82e28;
+  padding: 10px 20px 10px 20px;
+  border: solid #a82e28 2px;
+  text-decoration: none;
+}
