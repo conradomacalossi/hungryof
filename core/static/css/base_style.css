@@ -2,19 +2,37 @@ body {
     background-color: #fec214;
 }
 
-.menu {
-    margin-left: auto;
-    margin-right: auto;
-    display: table;
-    text-align: center;
-    position:absolute;
-    top: 40px;
-    width: 100%;
+.navbar {
+    margin-top: 10px;
+    background-color: white;
+    border: none;
 }
 
+a {
+    color: white;
+}
 
-.logo {
-    width: 200px;
-    margin :auto;
+.navbar-brand {
+    width: 110px;
+    padding: 8px 0 8px 0;
+}
+
+.navbar-fixed-bottom {
+    background-color: #50423f;
+    text-align: center;
+}
+
+.navbar-collapse {
+  text-align:center;
+}
+
+.navbar-nav-center {
+    display:inline-block;
+    float:none;
+}
+
+.contato {
+    color: white !important;
+    font-size: 25px;
 }
 
