@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="022c7778-2376-4961-831e-5cf025c118d0" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/static/css/bootstrap.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/static/imgs/logo_hungry_of_branco.svg" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/core/static/js/classie.js" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/core/static/js/npm.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
