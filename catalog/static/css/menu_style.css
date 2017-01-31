@@ -1,0 +1,36 @@
+.cardapio {
+    margin-top: 200px;
+    z-index: 1;
+}
+
+.menu-img {
+    background-image: url("../imgs/menu.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat ;
+    height: 1000px;
+}
+/* Botão Faça o seu pedido */
+
+.button {
+  color: #50423f;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  border: solid #50423f 2px;
+  text-decoration: none;
+  bottom: 500px;
+}
+
+.button:hover {
+  color: #a82e28;
+  padding: 10px 20px 10px 20px;
+  border: solid #a82e28 2px;
+  text-decoration: none;
+}
+
+/* Botão Faça o seu pedido fim */
+
+
+.active{
+    background-color: #50423f !important;
+    border-color: #50423f !important;
+}

@@ -4,12 +4,11 @@ from django.contrib import admin
 admin.autodiscover()
 
 import core.views
+import catalog.views
 
-# Examples:
-# url(r'^$', 'gettingstarted.views.home', name='home'),
-# url(r'^blog/', include('blog.urls')),
 
 urlpatterns = [
     url(r'^$', core.views.index, name='index'),
+    url(r'^menu/', catalog.views.menu, name='menu'),
     url(r'^admin/', include(admin.site.urls)),
 ]

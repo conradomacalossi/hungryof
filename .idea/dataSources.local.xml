@@ -5,5 +5,16 @@
       <database-info product="SQLite" version="3.8.11" jdbc-version="2.1" driver-name="SQLiteJDBC" driver-version="native" />
       <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed" />
     </data-source>
+    <data-source name="dt4kr88uiouro@ec2-184-72-252-69.compute-1.amazonaws.com" uuid="f77825f6-5e73-4fb8-837f-9e1eecd33b41">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+      <secret-storage>master_key</secret-storage>
+      <first-sync>true</first-sync>
+      <user-name>qzqyglhyqdcavb</user-name>
+    </data-source>
+    <data-source name="Django default" uuid="73a05f54-fbe4-457b-ba2a-2dd7e86420c3">
+      <database-info product="SQLite" version="3.8.11" jdbc-version="2.1" driver-name="SQLiteJDBC" driver-version="native" />
+      <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed" />
+      <auth-required>false</auth-required>
+    </data-source>
   </component>
 </project>

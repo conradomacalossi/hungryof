@@ -1,15 +1,8 @@
-body {
-    background-color: #fec214;
-}
-
 .navbar {
     background-color: white;
     border: none;
 }
 
-a {
-    color: white;
-}
 
 .navbar-brand {
     width: 110px;

@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block container %}
+
+    <!-- Style -->
+    <link rel="stylesheet" href="{% static 'css/menu_style.css' %}">
+
+    <!-- Contéudo -->
+    <div class="container-fluid  menu-img">
+
+        <div class="row">
+
+            <h1 class="text-center cardapio"><strong>CARDÁPIO</strong></h1>
+
+            <p class="text-center lead">A nossa paixão pela comida é compartilhada com nossos clientes.<br>
+            Ingredientes frescos, preparados à mão que trazem o seu desejo para a vida.</p>
+
+        </div>
+
+    </div>
+
+    <div class="container-fluid">
+
+        <div class="row black text-center">
+
+            {% for category in categories %}
+
+                <div class="col-xs-6 col-sm-4 ">
+
+                    <div class="list-group">
+
+                      <a class="list-group-item active">
+                        <h4 class="list-group-item-heading">{{ category }}</h4>
+                      </a>
+
+                      {% for product in products %}
+
+                          <a href="#" class="list-group-item">
+                            <h4 class="list-group-item-heading">{{ product }}</h4>
+                            <p class="list-group-item-text">{{ product.ingredient }}</p>
+                          </a>
+
+                      {% endfor %}
+
+
+
+                    </div>
+
+
+                </div>
+            {% endfor %}
+
+
+
+        </div>
+
+
+
+
+    </div>
+
+
+
+    <!-- Botão faça seu pedido -->
+    <div class="text-center">
+        <a href="#" class="button">Faça seu pedido</a>
+    </div>
+
+{% endblock %}

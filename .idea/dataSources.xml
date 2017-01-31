@@ -17,5 +17,27 @@
         </library>
       </libraries>
     </data-source>
+    <data-source source="LOCAL" name="dt4kr88uiouro@ec2-184-72-252-69.compute-1.amazonaws.com" uuid="f77825f6-5e73-4fb8-837f-9e1eecd33b41">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://ec2-184-72-252-69.compute-1.amazonaws.com:5432/dt4kr88uiouro</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="Django default" uuid="73a05f54-fbe4-457b-ba2a-2dd7e86420c3">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>$PROJECT_DIR$/gettingstarted/settings.py</remarks>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/db.sqlite3</jdbc-url>
+      <libraries>
+        <library>
+          <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/Xerial SQLiteJDBC/3.8.11.2/sqlite-jdbc-3.8.11.2.jar</url>
+        </library>
+        <library>
+          <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/Xerial SQLiteJDBC/3.8.11.2/xerial-sqlite-license.txt</url>
+        </library>
+      </libraries>
+    </data-source>
   </component>
 </project>
