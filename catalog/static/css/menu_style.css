@@ -1,7 +1,33 @@
-.menu-img {
+html,
+body {
+    height: 100%;
+}
+
+#cover {
     background: #fec214 url("../imgs/menu.jpg") top center no-repeat;
     background-size: cover;
-    height: 1000px;
+    color: white;
+    height: 100%;
+    display: flex;
     text-align: center;
+    align-items: center;
 
 }
+
+#cover-caption {
+    width: 100%;
+}
+
+.col {
+    margin-top: 100px;
+}
+
+.active {
+    background-color: #50423F !important;
+    border-color: #50423F !important;
+}
+
+.contato {
+    color: #50423F !important;
+}
+

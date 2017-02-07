@@ -9,16 +9,20 @@
 
     <!-- Contéudo -->
 
-    <section class="menu-img">
+    <section id="cover">
+
         <div id="cover-caption">
+
             <div class="container-fluid">
-                <div class="col-sm-10 col-sm-offset-1">
-                    <h1>CARDÁPIO</h1>
-                    <p class="text-center lead">A nossa paixão pela comida é compartilhada com nossos clientes.<br>
-                        Ingredientes frescos, preparados à mão que trazem o seu desejo para a vida.</p>
-                </div>
-            </div>
-        </div>
+
+                <h1 class="display-4"><strong>CARDÁPIO</strong></h1>
+                    <h4>A nossa paixão pela comida é compartilhada com nossos clientes.<br>
+                        Ingredientes frescos, preparados à mão que trazem o seu desejo para a vida.</h4>
+
+             </div>
+
+         </div>
+
     </section>
 
 
@@ -28,37 +32,86 @@
 
             {% for category in categories %}
 
-                <div class="col-6 col-md-4">
+                <div class="col">
 
                     <div class="list-group">
-                      <a class="list-group-item list-group-item-action flex-column align-items-start active">
 
-                       <div class="d-flex w-100 justify-content-between">
-                          <h4 class="mb-1">{{ category }}</h4>
-                        </div>
+                        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start active">
 
-                       </a>
+                            <div class="d-flex w-100 justify-content-between active">
+
+                                <h5 class="mb-1 active">{{ category }}</h5>
+
+                            </div>
+
+                         </a>
 
                         {% for product in products %}
 
-                          <a class="list-group-item list-group-item-action flex-column align-items-start">
-
+                          <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
                             <div class="d-flex w-100 justify-content-between">
-
                               <h5 class="mb-1">{{ product }}</h5>
 
-                             </div>
-
+                            </div>
                             <p class="mb-1">{{ product.ingredient }}</p>
 
-                           </a>
+                          </a>
 
-                         {% endfor %}
+                        {% endfor %}
+
+
+                     </div>
+
+
+
+                 </div>
+
+            {% endfor %}
+
+         </div>
+
+    </div>
+
+<!--
+    <div class="container-fluid">
+
+        <div class="row">
+
+            {% for category in categories %}
+
+                <div class="col-6 col-md-4">
+
+                    <div class="card text-center">
+
+                        <div class="card-header">{{ category }}</div>
+
+                          <div class="card-block">
+
+                            {% for product in products %}
+
+                              <ul class="list-group list-group-flush text-center">
+
+                                <li class="list-group-item text-center">
+
+                                   <h4 class="card-title">{{ product }}</h4>
+
+                                 </li>
+
+                                <li class="list-group-item">
+
+                                    <p class="mb-1">{{ product.ingredient }}</p>
+
+                                 </li>
+
+                               </ul>
+
+                             {% endfor %}
+
+                           </div>
 
                      </div>
 
                  </div>
-
 
              {% endfor %}
 
