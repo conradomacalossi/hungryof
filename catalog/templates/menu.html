@@ -8,64 +8,62 @@
     <link rel="stylesheet" href="{% static 'css/menu_style.css' %}">
 
     <!-- Contéudo -->
-    <div class="container-fluid  menu-img">
 
-        <div class="row">
-
-            <h1 class="text-center cardapio"><strong>CARDÁPIO</strong></h1>
-
-            <p class="text-center lead">A nossa paixão pela comida é compartilhada com nossos clientes.<br>
-            Ingredientes frescos, preparados à mão que trazem o seu desejo para a vida.</p>
-
+    <section class="menu-img">
+        <div id="cover-caption">
+            <div class="container-fluid">
+                <div class="col-sm-10 col-sm-offset-1">
+                    <h1>CARDÁPIO</h1>
+                    <p class="text-center lead">A nossa paixão pela comida é compartilhada com nossos clientes.<br>
+                        Ingredientes frescos, preparados à mão que trazem o seu desejo para a vida.</p>
+                </div>
+            </div>
         </div>
+    </section>
 
-    </div>
 
     <div class="container-fluid">
 
-        <div class="row black text-center">
+        <div class="row">
 
             {% for category in categories %}
 
-                <div class="col-xs-6 col-sm-4 ">
+                <div class="col-6 col-md-4">
 
                     <div class="list-group">
+                      <a class="list-group-item list-group-item-action flex-column align-items-start active">
 
-                      <a class="list-group-item active">
-                        <h4 class="list-group-item-heading">{{ category }}</h4>
-                      </a>
+                       <div class="d-flex w-100 justify-content-between">
+                          <h4 class="mb-1">{{ category }}</h4>
+                        </div>
 
-                      {% for product in products %}
+                       </a>
 
-                          <a href="#" class="list-group-item">
-                            <h4 class="list-group-item-heading">{{ product }}</h4>
-                            <p class="list-group-item-text">{{ product.ingredient }}</p>
-                          </a>
+                        {% for product in products %}
 
-                      {% endfor %}
+                          <a class="list-group-item list-group-item-action flex-column align-items-start">
 
+                            <div class="d-flex w-100 justify-content-between">
 
+                              <h5 class="mb-1">{{ product }}</h5>
 
-                    </div>
+                             </div>
 
+                            <p class="mb-1">{{ product.ingredient }}</p>
 
-                </div>
-            {% endfor %}
+                           </a>
 
+                         {% endfor %}
 
+                     </div>
 
-        </div>
-
-
-
-
-    </div>
+                 </div>
 
 
+             {% endfor %}
 
-    <!-- Botão faça seu pedido -->
-    <div class="text-center">
-        <a href="#" class="button">Faça seu pedido</a>
-    </div>
+         </div>
+
+     </div>
 
 {% endblock %}
